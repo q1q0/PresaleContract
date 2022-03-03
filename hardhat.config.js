@@ -16,10 +16,23 @@ module.exports = {
       url: "https://bsc-dataseed.binance.org/",
       chainId: 56,
       accounts: [`${process.env.PRIVATE_KEY}`]
+    },
+    avalancheTest: {
+      url: 'https://api.avax-test.network/ext/bc/C/rpc',
+      gasPrice: 225000000000,
+      chainId: 43113,
+      accounts: [`${process.env.PRIVATE_KEY}`]
+    },
+    avalancheMain: {
+      url: 'https://api.avax.network/ext/bc/C/rpc',
+      gasPrice: 225000000000,
+      chainId: 43114,
+      accounts: [`${process.env.PRIVATE_KEY}`]
     }
   },
   etherscan: {
-    apiKey: "4W3GQRGEMSXKW2J8BICWZWJCP9BFQ58RGA"
+    // apiKey: "4W3GQRGEMSXKW2J8BICWZWJCP9BFQ58RGA" for ether net work
+    apiKey: "H3MD5GNTRKBXXG5AZM1MRQ7WC99H188APC"
   },
   solidity: {
     version: "0.8.0",
